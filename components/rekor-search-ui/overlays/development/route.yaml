@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: rekor-search-ui
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rekor-search-ui
+    app.kubernetes.io/part-of: rekor-search-ui
+  name: rekor-search-uimmdv
+spec:
+  port:
+    targetPort: 3000
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: rekor-search-ui
+    weight: 100
+status: {}

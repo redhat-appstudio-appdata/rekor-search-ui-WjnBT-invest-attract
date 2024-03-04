@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: rekor-search-ui
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/rekor-search-ui/rekor-search-ui@sha256:7f6aa5eb011d5250ccf79375f229034064c5d626bf6f5e4c31beca89dad27093
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/rekor-search-ui/rekor-search-ui@sha256:75324d6434023a60fa41e6daec3f6568e26c447fcc4c20a7cb6ecd39562cecb7
         imagePullPolicy: Always
         name: container-image
         ports:

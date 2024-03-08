@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: rekor-search-ui
     app.kubernetes.io/part-of: rekor-search-ui
-  name: rekor-search-uimmdv
+  name: rekor-search-uiu2rb
 spec:
   port:
     targetPort: 3000
